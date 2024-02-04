@@ -13,6 +13,7 @@ It plays a mp3 file on your computer using default audio device.
 
     cd lockdb
     go build
-    // Following will create sqlite.db under current directory and show 2 goroutine preempting the lock.
+    // Following will create sqlite.db under the current directory and
+    // show 2 goroutines preempting the lock.
     ./lockdb
     
