@@ -17,8 +17,8 @@ It plays a mp3 file on your computer using default audio device.
     // show 2 goroutines preempting the lock.
     ./lockdb
 
-   cd polish-notation
-   go build
-   // Following expression will got 21.0
-   ./polish-notation '3+4/2 * (5+6/1.5)'
+    cd polish-notation
+    go build
+    // Following expression will got 21.0
+    ./polish-notation '3+4/2 * (5+6/1.5)'
     
