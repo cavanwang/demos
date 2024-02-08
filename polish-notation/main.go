@@ -25,7 +25,6 @@ func middleToSuffix(s string) ([]string, error) {
 			l := getNumStrLen(s, i)
 			result = append(result, s[i:l+i])
 			i = l + i - 1
-			fmt.Printf("current is %s, num.len=%d\n", current, l)
 			continue
 		}
 
@@ -175,5 +174,5 @@ func main() {
 		fmt.Println("computeSuffix error:", err.Error())
 		os.Exit(1)
 	}
-	fmt.Printf("%q resolve to %v,  compute got: %f\n", s, got, result)
+	fmt.Printf("%v compute got: %f\n", got, result)
 }

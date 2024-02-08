@@ -16,4 +16,9 @@ It plays a mp3 file on your computer using default audio device.
     // Following will create sqlite.db under the current directory and
     // show 2 goroutines preempting the lock.
     ./lockdb
+
+   cd polish-notation
+   go build
+   // Following expression will got 21.0
+   ./polish-notation '3+4/2 * (5+6/1.5)'
     
