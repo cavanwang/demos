@@ -2,6 +2,10 @@
 ## All kinds of tiny program by golang.
 ### play-mp3
 It plays a mp3 file on your computer using default audio device.
+### lockdb
+It tries to lock a name with timeout, like mysql's GET_LOCK(name, timeout)
+### polish-notation
+It evals an arithmetic express by reverse polish notation
 #### Build and run:
     go mod init && go mod tidy
 
