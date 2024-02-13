@@ -25,4 +25,15 @@ It evals an arithmetic express by reverse polish notation
     go build
     // Following expression will get 21.0
     ./polish-notation '3+4/2 * (5+6/1.5)'
+
+    cd compilation-principle/arithmetic-expression/left-recursive-correct-associativity
+    go build
+    // Following will use special left-recursive to resolve arithmetic express
+    ./left-recursive-correct-associativity
+
+    cd compilation-principle/arithmetic-expression/left-recursive-error-associativity
+    go build
+    // Following will use standard left-recursive to resolve expression and it cannot 
+    // left-associativity, e.g. 3+4-5 will wrongly got a 3+(4-5)
+    ./left-recursive-error-associativity
     
